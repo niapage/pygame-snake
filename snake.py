@@ -1,8 +1,8 @@
 '''
 Snake game.
 Authors:
-<insert the names of your teammates here>
-'''
+Nia Page, Patrice Shelton, Sumera Billy
+
 
 import pygame
 import random
@@ -55,7 +55,9 @@ def create_food_position():
     The first element is the x position. Must be an int between 0 and GRID_WIDTH - 1, inclusively.
     The second element is the y position. Must be an int between 0 and GRID_HEIGHT - 1, inclusively.
     """
-    return
+    food_position_x = randint(0, (gridwidth -1))
+    food_position_y = randint(0, (gridheight -1))
+    return ((food_position_x), (food_position_y))
 
 def snake_ate_food(snake, food):
     """Returns whether food was eaten by the snake.
